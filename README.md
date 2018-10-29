@@ -25,3 +25,14 @@ install.packages("tidyverse")
 That's it! Now you're ready for CBio Thursday - Introducing Tidyverse in R.
 
 See you soon!
+
+Tentative Schedule
+------------------
+
+-   18.00 - 18.10 1. Introduction to the Tidyverse philosophy
+-   18.10 - 18.45 2. Reading in data using 'readr' (10 minutes lecture, 25 minutes exercises)
+-   18.45 - 19.00 Break
+-   19.00 - 19.45 3. Wrangling data 'dplyr' (10 minutes lecture, 35 minutes exercises)
+-   19.45 - 20.00 Break
+-   20.00 - 20.45 4. Visualising data 'ggplot' (10 minutes lecture, 35 minutes exercises)
+-   20.45 - 21.00 Q&A and wrap up
