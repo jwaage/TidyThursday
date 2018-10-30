@@ -1,3 +1,16 @@
+## Hvorfor R til analyse?
+* Open source = gratis
+* State of the art datascience-biblioteker
+* Reproducerbart. Vis f.eks et kompleks regneark, med en masse uafhængiheder. Umuligt at gennemskue. Hvad hvis du får et nyt datasæt? Ikke modulært, du kan ikke genbruge dele af din analyse. 
+* Verdens bedste data-science IDE, RStudio
+* R producerer publikationsklar grafik
+* R understøtter alle de analyser, du kan komme i tanke om.
+
+## Hvorfor ikke R til analyse
+* R spiller ikke så let ind i et klassisk windows corporate miljø, her er tableau og powerBI nemmere at få i produktion (men det kan sagtens lade sig gøre med R)
+* Hvis du skal lave algoritmer der kræver ekstrem hastighed (men god integration med cpp)
+* Hvis du skal lave analyser eller produkter til et python-only produktionsmiljø
+
 ## Fordele ved tidyverse
 * [Tidy tools manifesto](https://tidyverse.tidyverse.org/articles/manifesto.html)
 >Programs must be written for people to read, and only incidentally for machines to execute.
@@ -14,13 +27,13 @@
 * Hurtig demo af konvertering til HTML / PDF ? (kræver selvfølgelig installation af knirt etc., men markdown er et stærkt undervisningsværktøj. 
 * Få deltagerne til at lave deres øvelser i markdown
 
-# Kursusemner (godt klar over, at alt dette ikke kan nås, pick and choose)
+## Kursusemner (godt klar over, at alt dette ikke kan nås, pick and choose)
 * Kort simplificeret introduktion til Rs datatyper (struktur: vector, list, data-frame, type: integer, numeric, character, factor, bool). Ingen scalars i R.
 
 * readr og dens vigtigste funktioner til messy data ingression, herunder locale, missing values etc.
-** col-type parsing
-** `parse_*`, parser NA, NAN etc.
-** `locale`, holder styr på locale-specifikke kommaer etc.
+    * col-type parsing
+    * `parse_*`, parser NA, NAN etc.
+    * `locale`, holder styr på locale-specifikke kommaer, decimaltegn, etc.
 * magrittr, `%>%`
 * long vs. wide format, fordele ulemper, hvad forventer tidyverse? Data reshaping `spread`, `gather`, etc.
 * tibble - fordele, `as_tibble`, `glimpse`, 
@@ -33,15 +46,17 @@
 * geoms
 * aestethics and data mappings forklaret intuitivt
 
-# Konkrete øvelser
+## Konkrete øvelser
 * Læs et datasæt ind fra forskellige kilder, csv., excel, SQL, SAS, etc.
 * Læs et messy datasæt ind med forskellige NA-typer, forkerte decimaltegn, ufuldkommen sidste linie, tal der er formateret som strings, etc. Typiske real-life scenarier.
 * Øvelser i filtrering, selektion, long/wide-konvertering, grouping, summarisering, joining
 * Datasæt til exploration og plot: cars, diamonds
-
-
 * Godt real-life example: Folk downloader deres rigtige time-baserede strømforbrug fra eloverblik.dk
-** Visualiser forbrug over tid
-** Se kun på ændringer i natforbrug, dagsforbrug, aftenforbrug
-** Udregn means af forskellige vinduer over døgnet og visualiser
-** Fjern outliers
+    * Visualiser forbrug over tid
+    * Se kun på ændringer i natforbrug, dagsforbrug, aftenforbrug
+    * Udregn means af forskellige vinduer over døgnet og visualiser
+    * Fjern outliers
+
+## Markdown
+* Dynamiske og parameteriserede rapporter i markdown
+* Markdown til HTML, PDF, word (evt officer-pakken), slides. Rapportering kan automatiseres til mange formater.
